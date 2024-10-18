@@ -18,7 +18,7 @@ int second_smallest(int arr[], int n) {
     int first_min = __INT_MAX__;  
     int second_min = __INT_MAX__;
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 1; i < n; i++) {
         if (arr[i] < first_min) {
             second_min = first_min;  // Update second_min to the previous first_min
             first_min = arr[i];      // Update first_min to the current element
